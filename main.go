@@ -64,5 +64,11 @@ func main() {
 			break
 
 		}
+		if choose == "5"{
+			fmt.Println(titlewords("enter select option:\n 1. hexadecimal help.\n 2. binary help.\n 3. octal help.\n 4. digit calculator help.\n ", "head"))
+			text, _:=  read.ReadString('\n')
+			text = strings.TrimSpace(text)
+			fmt.Println(readfile(text))
+		}
 	}
 }
